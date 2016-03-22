@@ -1,0 +1,30 @@
+<?php
+/**
+ * <Module> template for separate item
+ *
+ */
+
+/**
+ * @var $this <Namespace>\<Module>\Block\View
+ * @see <Namespace>\<Module>\Block\View
+ */
+?>
+<?php $_<module>Item = $this->get<Module>(); ?>
+    <div class="<module>_item_subtitle">
+        <?php echo $this->formatDate($_<module>Item->getPublishedAt()) ?> |
+        <?php echo $this->escapeHtml($_<module>Item->getAuthor()) ?>
+    </div>
+
+<div class="<module>_item_view">
+    <?php if ($imageUrl = $this->getImageUrl($_<module>Item, 400)): ?>
+       <p><img src="<?php echo $imageUrl ?>" alt="<?php echo $this->escapeHtml($_<module>Item->getTitle()) ?>" /></p>
+    <?php endif; ?>
+
+    <div class="<module>_item_content"><?php echo $_<module>Item->getContent() ?></div>
+
+    <div class="pager">
+        <a href="<?php echo $this->getBackUrl() ?>">
+            <?php echo __('Return to list') ?>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="[Namespace]_[Module]::[module]" title="[Module]" module="[Namespace]_[Module]" sortOrder="30" resource="[Namespace]_[Module]::[module]"/>
+        <add id="[Namespace]_[Module]::[module]_manage" title="All Items" module="[Namespace]_[Module]" sortOrder="10" parent="[Namespace]_[Module]::[module]" action="[module]/index/" resource="[Namespace]_[Module]::manage"/>
+    </menu>
+</config>

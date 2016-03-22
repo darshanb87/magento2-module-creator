@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="[Namespace]\[Module]\Controller\AbstractController\[Module]LoaderInterface" type="\[Namespace]\[Module]\Controller\AbstractController\[Module]Loader" />
+</config>

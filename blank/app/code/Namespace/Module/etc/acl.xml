@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="[Namespace]_Adminhtml::admin">
+                <resource id="[Namespace]_[Module]::[module]" title="[Module]" sortOrder="40">
+                    <resource id="[Namespace]_[Module]::manage" title="[Module] Module" sortOrder="10">
+						<resource id="[Namespace]_[Module]::save" title="Save [Module]" sortOrder="10" />
+                        <resource id="[Namespace]_[Module]::news_delete" title="Delete [Module]" sortOrder="20" />
+					</resource>
+                </resource>
+                <resource id="[Namespace]_Adminhtml::stores">
+                    <resource id="[Namespace]_Adminhtml::stores_settings">
+                        <resource id="[Namespace]_Adminhtml::config">
+                            <resource id="[Namespace]_[Module]::config_[module]" title="[Module] Section" sortOrder="50" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

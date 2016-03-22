@@ -1,0 +1,36 @@
+html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {margin:0; padding:0;}
+
+
+	body{ color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857; }
+.wrapper {width:100%; margin:0 auto; }
+.container {margin:0 auto; width:1000px;}
+.logo {/*float:left;*/ text-align:center;}
+
+.header {float:left; border-bottom:1px solid #000; padding-bottom:10px; width:1000px;}
+.header h1 {margin:50px 0 0 50px;  font-size:36px; font-weight:500; font-family:inherit; text-align:center; color:#387cb7}
+
+.form {float:left; margin:50px 0 0 350px; }
+
+.first {font-weight:bold; float:left; margin:0 25px 0 0;}
+.name {float:left; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border:1px solid #000; width:200px; height:20px;}
+
+.second {font-weight:bold; float:left; margin:0 53px 0 0;}
+.button {width:500px; float:left;}
+.module {float:left; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border:1px solid #000; width:200px; height:20px;}
+.messagestyle {float:left;margin:30px 0px;}
+
+.submit {background-color:#428bca; width:100px; height:35px; cursor:pointer; font-size:14px; color:#fff; -moz-border-radius: 3px; border-radius: 4px; margin:20px 0 0 70px; border:1px solid #2b669a;
+
+  background-image: linear-gradient(to bottom, #428bca 0px, #2d6ca2 100%);
+    background-repeat: repeat-x;
+    border-color: #2b669a;}
+
+form.cmxform label.error, label.error {/* remove the next line when you have trouble in IE6 with labels in list */color: red;font-style: italic;font-weight:600}
+
+form.cmxform label.error {margin-left: 50px;width: 220px;}
+
+#message ul{padding:5px 30px;}
+#newmodule {width: 670px;}

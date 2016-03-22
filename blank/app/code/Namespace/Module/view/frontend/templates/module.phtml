@@ -1,0 +1,26 @@
+<?php $_<module> = $this->getCollection(); ?>
+<?php if ($_<module>->getSize()): ?>
+<div class="<module>_list_view">
+    <?php foreach ($_<module> as $<module>Item): ?>
+        <div id="item_<?php echo $<module>Item->getId() ?>" class="<module>_list_item">
+            <h2>
+                <a href="<?php echo $this->getItemUrl($<module>Item) ?>">
+                    <?php echo $this->escapeHtml($<module>Item->getTitle()) ?>
+                </a>
+            </h2>
+
+            <div class="<module>_item_subtitle">
+                <?php echo $this->formatDate($<module>Item->getPublishedAt()) ?> |
+                <?php echo $this->escapeHtml($<module>Item->getAuthor()) ?>
+            </div>
+
+            <?php if ($imageUrl = $this->getImageUrl($<module>Item, 100)): ?>
+               <p><img src="<?php echo $imageUrl ?>" alt="<?php echo $this->escapeHtml($<module>Item->getTitle()); ?>" /></p>
+            <?php endif; ?>
+        </div>
+    <?php endforeach; ?>
+</div>
+<?php echo $this->getPager() ?>
+<?php else: ?>
+    <div class="message info empty"><span><?php echo __('You have no <Module>.'); ?></span></div>
+<?php endif ?>
